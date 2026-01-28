@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="Suravi Asset/Suravi Logo.png" type="image/png">
+  <meta name="theme-color" content="#a8518a">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS FILES-->
+  <link rel="stylesheet" type="text/css" href="css/effects.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/popup.css">
+
+  <!-- JS FILES -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <script src="path/to/disable-right-click.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURAVI 2K26</title>
+  <style type="text/css">
+
+@media (max-width: 1199px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+    @media screen and (min-width: 992px)
+    {
+      #section2 h1
+      {
+        font-size: 50px;
+      }
+      #section3 h1
+      {
+        font-size: 50px;
+      }
+      #section1
+      {
+        font-size: 23px !important;
+      }
+      #section1 .content
+      {
+        font-size: 35px !important;
+      }
+      #section1 .content__container__list
+      {
+        padding-left: 240px;
+      }
+    }
+
+    /* Popup Styles */
+ /* Popup Styles */
+  /* General styles for the popup */
+/* General styles for the popup */
+/* General styles for the popup */
+/* .popup {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0; */
+  /* background: rgba(94, 92, 92, 0.7); Semi-transparent background */
+  /* height: 100%;
+  transition-duration: 0.5s;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .cnt223 {
+  width: 70%; /* Increased width for desktops */
+  /* max-width: 400px; /* Ensures it doesn't get too large */
+  /* background: #ffffff; */
+  /* position: relative;
+  z-index: 9999;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;  */
+} 
+
+/* .cnt223 img {
+  max-width: 200%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cnt223 p {
+  clear: both;
+  color: #14609c; */
+  /* font-size: 18px; Increased for better readability */
+  /* font-family: sans-serif;
+  padding: 12px 0;
+} */
+
+/* .cnt223 p a {
+  color: #d91900;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.popup .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+  animation: flash 1s infinite;
+} */
+
+/* Define the flashing animation */
+/* @keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+} */
+
+/* Tablet & Small Screens */
+/* @media screen and (max-width: 768px) { */
+  /* .cnt223 { */
+    /* width: 80%; Adjusts for smaller screens */
+    /* padding: 20px;
+  }
+
+  .cnt223 p {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .popup .close {
+    font-size: 16px;
+    top: 10px;
+    right: 10px;
+  }
+} */
+
+/* Mobile Portrait View */
+/* @media screen and (max-width: 480px) {
+  .cnt223 {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cnt223 p {
+    font-size: 14px;
+  }
+
+  .popup .close {
+    font-size: 14px;
+  }
+} */
+
+
+  </style>
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60" style="padding-top: 50px;">
+  <!-- BOOTSTRAP NAVBAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav_bar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" id="logo"><img src="Suravi Asset/toplogo.png" id="logo"></a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <!-- <li><a href="https://forms.gle/AGnfxQEerThxgJVQA">T-SHIRT</a></li> -->
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="events.html">EVENTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="events.html#Technical">TECHNICAL</a></li>
+                <li><a href="events2.html">NON-TECHNICAL</a></li>
+                <li><a href="events3.html#cultural">E-SPORTS</a></li>
+                <li><a href="events4.html#E-sports">CULTURAL</a></li>
+                <li><a href="events5.html#Athletics">ATHLETICS</a></li>
+                <li><a href="events6.html#Athletics">SPORTS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">SPECIAL
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="internshipexpo.html">FOOD STALL</a></li>
+              </ul>
+            </li>
+            <li><a href="speakers.html">PATRON</a></li>
+            <li><a href="sponsors.html">SPONSORS</a></li>
+            <li><a href="parvaah.html">CONTACT</a></li>
+            <li><a href="contact.html">ORGANISERS</a></li>
+            <li><a href="achieve.html">ACHIEVEMENTS</a></li>
+            <!-- New Flashing Notices Section -->
+            <li><a href="notices.html" class="flashing">NOTICES</a></li>
+            <li style="background: none;">
+              <a target="_blank" href="https://www.gietbbsr.edu.in/" style="padding:0px 15px; background: none !important;">
+                <img src="Suravi Asset/L3.png" height="50">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Popup Container -->
+  <!-- <div class="popup" id="popup">
+    <div class="cnt223">
+      <div>        <span class="close" id="closePopup">X</span>
+      </div>
+      <p style="text-align:center;">
+        <a href="https://giet-ghangapatna-hackfest.vercel.app/" target="_blank">
+          <img src="tech-events/popup.jpg" alt="" style="width:250px; height: 400px;" />
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      setTimeout(function () {
+        $('#popup').fadeIn('slow');
+      }, 1000);
+
+      $('#closePopup').click(function () {
+        $('#popup').fadeOut('slow');
+      });
+    });
+  </script> -->
+
+</body>
+
+
+  <a target="_blank" href="https://photos.app.goo.gl/JnTRuZ6Li8tDEuan9" id="form" title="Google Photos">
+    <img src="Suravi Asset/gpo.png" alt="Google Photos" width="32" style="vertical-align: middle;">
+</a>
+          
+<!-- <a target="_blank" href="https://photos.app.goo.gl/JnTRuZ6Li8tDEuan9" id="form" title="Google Photos"><i class="fa fa-solid fa-photo-film" aria-hidden="true"></i></a> -->
+
+<!-- END OF NAVBAR -->
+  <!-- SECTION 1 (Containing background video) -->
+  <div id="section1" class="section">
+    <!-- Inserting BG Video: -->
+    <div class="fullscreen-bg">
+      <div class="fullscreen-bg__video"></div>
+      <video poster="Suravi Asset/speaker/PATTERNBG.jpg" loop muted autoplay class="fullscreen-bg__video">
+        <source src="Suravi Asset/speaker/PATTERNBG.jpg" type="video/mp4">
+        </video>
+      </div>
+      <!-- End of BG Video -->
+      <!-- Inserting contjainer inside section 1 -->
+       <div class="container">
+        <div class="content" style="margin-top: 5px;">
+          <div class="content__container" >
+            <p class="content__container__text">
+              Brimming with
+            </p>
+
+            <ul class="content__container__list">
+              <li class="content__container__list__item" style="color: #02ffdd;">fun!</li>
+              <li class="content__container__list__item" style="color: #00ff62;">code!</li>
+              <li class="content__container__list__item" style="color: #ff160a;">Tech!</li>
+              <li class="content__container__list__item" style="color: #1a06ff;">Create!</li>
+            </ul>
+          </div>
+        </div> 
+        <!-- End Of Animation -->
+
+        <!-- Section Text Content -->
+        <div class="section_content1">
+          <p style="text-align: center;">
+         
+            <p style="text-align: center;"> The stage is set, the spotlight is yours bring your  <strong>ideas to life </strong>, at <strong> SURAVI-2K26!</strong>, and <strong>Everything</strong>.</p>
+              <strong>Welcome to SURAVI-2K26!</strong></p>
+         <!-- Countdown Timer -->
+    
+
+         <link rel="stylesheet" href="css/timer.css">
+
+        
+         <!-- Right Click Disabled -->
+         <script>
+          // Disable right click
+          document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+          });
+      
+          // Disable inspect mode
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || e.key === 'f12') {
+              e.preventDefault();
+            }
+          });
+      
+          // Disable inspect mode on right click
+          document.addEventListener('mousedown', function(e) {
+            if (e.button === 2) {
+              e.preventDefault();
+            }
+          });
+        </script>
+
+
+   
+       
+        
+            <h1 class="title"><span>SURAVI </span> <span>2K26</span> </h1>
+            
+            <!-- Event Details in One Line -->
+            <div class="event-details">
+                <div class="detail hover-effect">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8H21M16 2V4M8 2V4M4 6H20C21.1 6 22 6.9 22 8V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V8C2 6.9 2.9 6 4 6Z" stroke="lime" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>FEBRUARY 21-22, 2026</span>
+                </div>
+                <div class="detail hover-effect">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 13.25 9.53 18.65 11.12 20.47C11.6 21.06 12.4 21.06 12.88 20.47C14.47 18.65 19 13.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.9 11.5 10 10.6 10 9.5C10 8.4 10.9 7.5 12 7.5C13.1 7.5 14 8.4 14 9.5C14 10.6 13.1 11.5 12 11.5Z" stroke="lime" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>GIET BBSR Campus</span>
+                </div>
+                <div class="detail hover-effect">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 21V19C16 17.9 15.1 17 14 17H6C4.9 17 4 17.9 4 19V21M20 21V19C20 16.8 18.2 15 16 15M10 11C11.66 11 13 9.66 13 8C13 6.34 11.66 5 10 5C8.34 5 7 6.34 7 8C7 9.66 8.34 11 10 11ZM18 8V14M18 8H22M18 8H14" stroke="lime" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>2000+ Participants</span>
+                </div>
+            </div>
+    
+            <h2 class="countdown-title">Event Countdown:</h2>
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Secs</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- About Section -->
+       
+        <script src="timer.js"></script>
+        
+         <div><div style="text-align: center; margin-top: 20px;">
+          <button id="registerBtn" onclick="window.location.href=''" style="display: yes;" class="register-button">Coming Soon!</button>
+
+         
+          </body>
+
+            
+          </script.>
+          </div>
+        </div>
+        
+        <!-- End of Text Content -->
+
+        <!-- Social Media Widget Plugin -->
+        <div class="social_widgets">
+          <!-- Facebook Widget -->
+          <div style="position: absolute; bottom: 0; left:10px;">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fkjsceabhiyantriki%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId&colorscheme=dark" width="200" height="25" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+          <!-- Twitter Widget -->
+          <div style="position: absolute; bottom: 0; right:0;">
+            <iframe
+            src="https://platform.twitter.com/widgets/follow_button.html?screen_name=gietghangapatna&show_screen_name=false&show_count=true&size=s"
+            title="Follow TwitterDev on Twitter"
+            width="200"
+            height="25"
+            style="border: 0; overflow: hidden;"
+            ></iframe>
+          </div>
+        </div>
+        <!-- End Of Social Media Widget -->
+      </div>
+      <!-- End Of Section 1 Container -->
+    </div>
+    <!-- Enf Of Section 1 -->
+
+    <!-- SECTION 2 (Placeholder) -->
+    <div id="section8" class="section">
+      <!-- Section 2 container -->
+      <div class="col-xs-12 col-md-6 section_content8" style="padding: 0px; float: right;">
+        <div class="overlay8"></div>
+        <div class="section8_text">
+          <h1 style="color: #dc6038">
+            ABOUT <strong id="aboutheading">SURAVI</strong>
+          </h1>
+          <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Russo+One&display=swap" rel="stylesheet">
+
+<p class="tech-text" style="text-align: center;">
+  SURAVI-2K26 is the annual techno-cultural extravaganza of GIET, where innovation meets creativity, and passion fuels excellence! It’s a grand celebration that brings together the brightest minds, the most talented performers, and the most enthusiastic participants in a festival of technology, culture, and limitless possibilities.
+
+  From electrifying competitions and hackathons to mesmerizing music, dance, and art, SURAVI-2K26 is more than just an event—it’s a movement, an experience, and a legacy in the making. Whether you're a tech enthusiast, an artist, or a dreamer, this is your stage to shine, create, and inspire.
+
+  Get ready to ignite your spirit, push your limits, and make memories that last a lifetime! 
+</p>
+
+          
+          
+          
+          <!-- <p style="text-align: center;">
+            SURAVI-2K25 is the annual techno-cultural extravaganza of GIET, where innovation meets creativity, and passion fuels excellence! It’s a grand celebration that brings together the brightest minds, the most talented performers, and the most enthusiastic participants in a festival of technology, culture, and limitless possibilities.
+    
+            From electrifying competitions and hackathons to mesmerizing music, dance, and art, SURAVI-2K25 is more than just an event—it’s a movement, an experience, and a legacy in the making. Whether you're a tech enthusiast, an artist, or a dreamer, this is your stage to shine, create, and inspire.
+    
+            Get ready to ignite your spirit, push your limits, and make memories that last a lifetime! 🌟🚀🎭🔥
+          </p> -->
+    
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <iframe width="320" height="200" src="https://www.youtube.com/embed/X26kn8S0FE8" 
+                    title="YouTube video player" frameborder="11111" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          
+          </div>
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+      <!-- <div class="col-md-6 section_image2"></div> -->
+      <!-- End Of Section 2 Container -->
+    </div>
+    <!-- End Of Section 2 -->
+ <!-- Countdown Script -->
+ <script>
+  function startCountdown() {
+    const eventDate = new Date(); // Event date set to current date + 10 days
+    eventDate.setDate(eventDate.getDate() + 10);
+    
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeRemaining = eventDate - now;
+      
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      
+      countdownElement.innerHTML = `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+      
+      if (timeRemaining <= 0) {
+        countdownElement.innerHTML = "The event has started!";
+      }
+    }
+    
+    setInterval(updateCountdown, 1000);
+  }
+
+  window.onload = startCountdown;
+</script>
+<div>
+     <!-- Section 3, same as section 2 -->
+    <div id="section9" class="section">
+      <div class="col-xs-12 col-md-6 section_content9" style="padding: 0px;">
+      <div class="overlay9"></div>
+        <div class="section9_text">
+          <h1 style="color: #ff0808">
+            ABOUT <strong id="aboutheading">GIET</strong>
+          </h1>
+          <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Russo+One&display=swap" rel="stylesheet">
+<div>
+
+
+</div>
+          <p class="tech-text2" style="text-align: center;">
+            Gandhi Institute of Excellent Technocrats (GIET), Ghangapatna, is a NAAC A+ accredited and NBA accredited premier institute in Bhubaneswar, Odisha, recognized for its academic excellence, advanced research, and industry-oriented education.
+            The institute is dedicated to shaping future leaders in engineering, technology, and management through global standards in education and strong industry collaborations.
+            GIET Ghangapatna is also renowned for SURAVI, its flagship techno-cultural fest, where creativity, technology, and talent converge to create an unforgettable experience.
+             Learn. Innovate. Excel. Welcome to GIET, where the future begins! 
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <iframe width="320" height="200" src="https://www.youtube.com/embed/GPMBAwPjYf0?si" 
+                    title="YouTube video player" frameborder="11111" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          
+          </div><div></div>
+        </div>
+      </div>
+
+      
+    
+      <!-- <div class="col-md-6 section_image3"></div> -->
+      <!-- End Of Section 3 Container -->
+    </div>
+
+    <!-- <div id="specialsection1">
+      <div id="overlayspecial1">
+      <div id="headerimage1">
+          <img class="img-responsive" src="images/drdodae.png" height="100%" style="margin: auto;">
+      </div>
+      <div id="specialcontent1">
+      <div id="actualcontent1">
+        In a first of its kind, Abhiyantriki welcomes India’s premier technical institutes, in the form of <strong>DAE (Department of Atomic Energy) and DRDO (Defence Research and Development Organization)</strong>. These two elite organizations mirror the ethos of discipline, diligence, and proficiency, and Abhiyantriki strives to walk on the same path. With  two such giants in town, the festival has to be legendary, as their exhibition is the highlight event of Abhiyantriki 2017!
+      </div>
+      </div>
+      </div>
+    </div> -->
+  
+    <div id="section4" class="section">
+      <!-- CAROUSEL -->
+      <div id="carousel-example-generic" class="carousel slide" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <!-- First slide -->
+         
+
+          <!-- Second slide -->
+          <div class="item skyblue">
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft">
+                Non-Tech Events  Creativity Unleashed!
+               
+</h3>
+                <h3 data-animation="animated bounceInRight">
+               
+              </h3> 
+              <a href="events2.html" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Know More</a>
+            </div>
+          </div><!-- /.item -->
+          <div class="item active deepskyblue">
+
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft">
+                 
+                 Tech Events Innovation and Skill!
+               
+              </h3>
+             <h3 data-animation="animated bounceInRight">
+                
+            
+              <a href="events.html" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Know More</a>
+            </div>
+          </div> 
+        
+          <div class="item darkerskyblue">
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft">
+                 Food Fest Stall  A Culinary Adventure!
+                
+              </h3>
+                <h3 data-animation="animated bounceInRight">
+               
+              
+              <a href="internshipexpo.html" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Know More</a>
+              </div>
+            </div>
+          <div class="item darkerskybluex">
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft">
+                 Cultural Events  Celebrating Tradition!
+                
+              </h3>
+                <h3 data-animation="animated bounceInRight">
+               
+              </h3> 
+              <a href="events4.html" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Know More</a>
+              </div>
+            </div>
+          <div class="item darkerskybluey">
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft">
+                 Sports  Speed, Strength, and Spirit!
+                
+            <h3 data-animation="animated bounceInRight">
+              
+              </h3> 
+              <a href="events6.html" onclick="return false;" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Know More</a>
+              </div>
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!-- /.carousel -->
+        <!-- End of Carousel -->
+      </div>
+      <!-- End of Section 3 -->
+
+      <!-- SECTION 4 -->
+
+
+      <!-- SECTION 5 -->
+      <div id="section5" class="section">
+        <div id="myCarousel" class="carousel slide" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active speakersbg">
+            <div class="carousel-caption">
+              <h3 data-animation="animated bounceInLeft" style="color: #fff;">
+Get inspired by the motivating speeches of illustrious personalities in the field of Science and Technology.
+              </h3>
+                 <h3 data-animation="animated bounceInRight">
+                This is the caption for slide 1
+              </h3>
+              <a href="speakers.html" class="btn btn-primary btn-lg" data-animation="animated zoomInUp">SPEAKERS</a>
+              </div>
+            </div>
+
+            <!-- <div class="item" style="background:#a1a1a1;">
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="Suravi Asset/speaker/principal.jpg" alt="pepsi" width="auto" height="auto">
+                <div class="textx" style="position: absolute;"><p>Dr. Subrajit Pradhan</p><p>Principal Giet</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="images/speakers/rc.png" alt="pepsi" width="auto" height="auto">
+                <div class="textx" style="position: absolute;"><p>Dr. R Chidambaram</p><p style="font-size: 0.8em;">Principal Scientific Adviser, GOI</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="images/speakers/mani-mamallan.png" alt="" width="auto" height="auto">
+                <div class="textx" style="position: absolute;"><p>Mani Mamallan</p><p style="font-size: 0.8em;">Founder & Chairman- E.P.S.</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="images/speakers/vishal-gupta.png" alt="pepsi" width="auto" height="auto">
+                <div class="textx" style="position: absolute;"><p>Vishal Gupta</p><p style="font-size: 0.8em;">CEO- SearchTrade</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="images/speakers/sameer-singh-jaini.png" alt="pepsi" width="100%" height="100%">
+                <div class="textx" style="position: absolute;"><p>Sameer Singh Jaini</p><p style="font-size: 0.8em;">CEO- The Digital Fifth</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+              <div class="itemx" style="float: left; padding: 0px">
+                <img src="images/speakers/murad-nathani.png" alt="pepsi" width="100%" height="100%">
+                <div class="textx" style="position: absolute;"><p>Murad Nathani</p><p style="font-size: 0.8em;">Co-Founder & CEO- Slonkit</p></div>
+                <div class="item-overlay top"></div>
+              </div>
+            </div>  -->
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+       <!-- <div id="section6" class="section">
+        <div class="container">
+          <div id="parvaahlogo">
+            <img src="images/parvaah_img/Parvaah12.png" height="100%" style="margin: auto;">
+          </div>
+          <div id="parvaahcontent">
+          <a href="parvaah.html" type="button" class="btn btn-info btn-lg">Know More</a>
+          </div>
+        </div> 
+      </div> -->
+     
+
+
+<!-- <div class="contact_us_6">
+  <div class="responsive-container-block container">
+    <form class="form-box" id="contact-form">
+      <div class="container-block form-wrapper">
+        <div class="mob-text">
+          <p class="text-blk contactus-head">Get in Touch</p>
+          <p class="text-blk contactus-subhead">
+            Have any questions? Reach out to us and we’ll get back to you as soon as possible!
+          </p>
+        </div> -->
+        
+        <!-- Form Fields -->
+        <!-- <div class="responsive-container-block">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input class="input" id="firstName" name="FirstName" placeholder="Please enter first name..." required>
+          </div>
+           -->
+<!--          
+          <div class="form-group">
+            <label for="query">What Do You Have in Mind?</label>
+            <textarea class="textinput" id="query" name="Query" placeholder="Please enter your query..." required></textarea>
+          </div>
+        </div>
+        <style>
+          .contact_us_6 {
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; -->
+  <!-- margin: 0 auto; /* Center the form horizontally */
+}
+
+.mob-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactus-head {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contactus-subhead {
+  font-size: 16px;
+  color: #666;
+}
+
+.input, .textinput {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.textinput {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 768px) {
+  .contact_us_6 {
+    max-width: 80%; /* Increase width on larger screens */
+  }
+
+  .input, .textinput {
+    padding: 14px;
+  }
+
+  .contactus-head {
+    font-size: 28px;
+  }
+
+  .contactus-subhead {
+    font-size: 18px;
+  }
+}
+
+        </style>
+        
+        
+        <button class="submit-btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+ 
+<!-- <div id="section7" class="section"> -->
+  <!-- Map Container -->
+  
+  <!-- White Box Container for Google Photos (Drive Upload) -->
+  <!-- <div id="drive-upload" class="col-xs-12 col-md-6 drive-container">
+    <a href="https://photos.app.goo.gl/JnTRuZ6Li8tDEuan9" target="_blank" style="text-decoration: none;">
+      <div class="drive-box">
+        <img src="Suravi Asset/gpo.png"
+             alt="Google Photos" class="drive-logo">
+        <p class="drive-text">Upload Event Files & Photos</p>
+      </div>
+    </a>
+  </div>
+</div> -->
+
+<!-- Footer section with social media links -->
+<footer id="socialdiv">
+  <div id="socialx">
+    <ul class="icon-effect icon-effect-1a" style="text-align: center;">
+      <li><a target="_blank" href="https://www.facebook.com/giet.ghangapatna.9" class="icon"><i class="fa fa-facebook"></i></a></li>
+      <li><a target="_blank" href="https://x.com/GIETGHANGAPATNA" class="icon"><i class="fa fa-twitter"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/giet_ghangapatna_official/" class="icon"><i class="fa fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.youtube.com/@G.I.E.TGhangapatna" class="icon"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+  </div>
+  <div><a target="_blank" href="test.html"><p style="text-align: center; color: white;">Designed And Developed @Team SURAVI Bhubaneswar</p></a></div>
+</footer>
+
+<!-- JavaScript for carousel -->
+<script type="text/javascript" src="js/animations.js"></script>
+<script>
+$('.carousel').carousel({
+  interval: false,
+  wrap: true,
+  pause: true,
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+      <!-- Social Media Section -->
+      <!-- <div class="responsive-cell-block" id="social-links">
+        <p class="text-blk">Reach us at:</p> -->
+        <!-- <div class="social-media-links">
+          <a class="social-icon-link" href="https://twitter.com/yourprofile" target="_blank">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png" alt="Twitter">
+          </a>
+          <a class="social-icon-link" href="https://www.facebook.com/yourprofile" target="_blank">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png" alt="Facebook">
+          </a>
+          <a class="social-icon-link" href="https://www.instagram.com/yourprofile" target="_blank">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" alt="Instagram">
+          </a>
+          <a class="social-icon-link" href="https://www.youtube.com/yourchannel" target="_blank">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png" alt="YouTube">
+          </a>
+        </div> --> 
+        <!-- <div id="contactcontent" class="col-xs-12 col-md-6">
+          <h1 style="margin-top: 10px; font-weight: bold;">Contact Us:</h1>
+        
+          <div class="contact_us_6">
+            <div class="responsive-container-block container">
+              <form class="form-box" id="contact-form">
+                <div class="container-block form-wrapper">
+                  <div class="mob-text">
+                    <p class="text-blk contactus-head">Get in Touch</p>
+                    <p class="text-blk contactus-subhead">
+                      Have any questions? Reach out to us and we’ll get back to you as soon as possible!
+                    </p>
+                  </div> 
+                   -->
+                  <!-- Form Fields 
+                  <div class="responsive-container-block">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input class="input" id="firstName" name="FirstName" placeholder="Please enter first name..." required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input class="input" id="email" name="Email" placeholder="Please enter email..." required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phoneNumber">Phone Number</label>
+                      <input class="input" id="phoneNumber" name="PhoneNumber" placeholder="Please enter phone number...">
+                    </div>
+                    <div class="form-group">
+                      <label for="query">What Do You Have in Mind?</label>
+                      <textarea class="textinput" id="query" name="Query" placeholder="Please enter your query..." required></textarea>
+                    </div>
+                  </div>
+                  
+                  Submit Button 
+                 <button class="submit-btn" type="submit">Submit</button>
+                </div>
+              </form>  -->
+        
