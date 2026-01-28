@@ -1,0 +1,86 @@
+
+    /* Popup Styles */
+  /* General styles for the popup */
+/* General styles for the popup */
+/* General styles for the popup */
+.popup {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  background: rgba(94, 92, 92, 0.7); /* Semi-transparent background */
+  height: 100%;
+  transition-duration: 0.5s;
+  left: 0;
+}
+
+.cnt223 {
+  min-width: 300px; /* Even more reduced width */
+  width: 300px;
+  min-height: 400px; /* Very, very short popup */
+  margin: 120px auto; /* Centered with smaller margin */
+  background: #fffcfc;
+  position: relative;
+  z-index: 9999;
+  padding: 5px; /* Further reduced padding */
+  border-radius: 10px; /* Slightly smaller rounded corners */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Softer, lighter shadow */
+}
+
+.cnt223 p {
+  clear: both;
+  color: #14609c;
+  font-size: 12px; /* Even smaller font size */
+  font-family: sans-serif;
+  padding: 3px 0; /* Reduced padding */
+  text-align: center;
+}
+
+.cnt223 p a {
+  color: #d91900;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.popup .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 12px; /* Further reduced close button size */
+  cursor: pointer;
+  color: red;
+  animation: flash 1s infinite; /* Apply the flashing animation */
+}
+
+/* Define the flashing animation */
+@keyframes flash {
+  0% { opacity: 1; }   /* Fully visible */
+  50% { opacity: 0.5; } /* Half transparent */
+  100% { opacity: 1; }  /* Fully visible again */
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .cnt223 {
+    width: 75%; /* Smaller for mobile */
+    min-width: unset; /* Remove min-width for smaller screens */
+    margin: 50px auto; /* Adjusted margin for mobile */
+    padding: 8px;
+    min-height: 25px; /* Very short height for mobile */
+  }
+
+  .cnt223 p {
+    font-size: 10px; /* Even smaller text for mobile */
+    padding: 3px 0;
+  }
+
+  .popup .close {
+    font-size: 10px; /* Small close button for mobile */
+    top: 5px;
+    right: 5px;
+  }
+}
+ 

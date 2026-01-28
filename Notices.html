@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="Suravi Asset/Suravi Logo.png" type="image/png">
+  <meta name="theme-color" content="#a8518a">
+  
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS (Bootstrap 3.3.7) -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- CSS FILES -->
+  <link rel="stylesheet" type="text/css" href="css/effects.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- JS FILES -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURAVI 2K25</title>
+  
+  <!-- Custom Styles -->
+  <style type="text/css">
+    /* Add your custom styles here */
+    
+    @media (max-width: 1199px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,.navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+        float: none;
+      }
+      .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in{
+        display:block !important;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      #section2 h1, #section3 h1 {
+        font-size: 50px;
+      }
+      #section1 {
+        font-size: 23px !important;
+      }
+      #section1 .content {
+        font-size: 35px !important;
+      }
+      #section1 .content__container__list {
+        padding-left: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!-- above attributes, so as to highlight the sections on navbar when scrolling -->
+  <!-- <div id="loader"></div> -->
+
+  <!-- BOOTSTRAP NAVBAR -->
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60" style="padding-top: 50px;">
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav_bar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" id="logo"><img src="Suravi Asset/toplogo.png" id="logo"></a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://forms.gle/AGnfxQEerThxgJVQA">T-SHIRT</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="events.html">EVENTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="events.html#Technical">TECHNICAL</a></li>
+                <li><a href="events2.html">NON-TECHNICAL</a></li>
+                <li><a href="events3.html#cultural">E-SPORTS</a></li>
+                <li><a href="events4.html#E-sports">CULTURAL</a></li>
+                <li><a href="events5.html#Athletics">ATHLETICS</a></li>
+                <li><a href="events6.html#Athletics">SPORTS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">SPECIAL
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="internshipexpo.html">FOOD STALL</a></li>
+              </ul>
+            </li>
+            <li><a href="speakers.html">PATRON</a></li>
+            <!-- <li><a href="sponsors.html">SPONSORS</a></li> -->
+            <li><a href="parvaah.html">CONTACT</a></li>
+            <li><a href="contact.html">ORGANISERS</a></li>
+            <li><a href="achieve.html">ACHIEVEMENTS</a></li>
+
+            <!-- New Flashing Notices Section -->
+            <li><a href="notices.html" class="flashing">NOTICES</a></li>
+            
+            <li style="background: none;">
+              <a target="_blank" href="https://www.gietbbsr.edu.in/" style="padding:0px 15px; background: none !important;">
+                <img src="Suravi Asset/L3.png" height="50">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+
+<title>News Section</title>
+<link rel="stylesheet" href="css/notice.css">
+<style>
+    .scrollbox {
+        height: 200px; /* Set the height of the scrollbox */
+        overflow: hidden; /* Hide the overflow for smooth scrolling */
+        position: relative;
+    }
+
+    .scrollgroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scrollitem {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+</head>
+<body>
+<section class="news-section">
+    <div class="container-fluid">
+        <div class="news-section-row">
+            <div class="item-notice">
+              <h2 style="font-size: 28px;">Notice</h2> <!-- Larger title -->
+                <div class="scrollbox wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
+                    <div class="scrollgroup" id="scrollContent">
+                        <div class="scrollitem">
+                            <a href="Notices/hackathon.pdf">
+                                GIET Hackathons Guidlines
+                            </a>
+                            <span>13 Feb 2025</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="Notices/notice1.pdf">
+                                Permission for work for Suravi Event 
+                            </a>
+                            <span>13 Feb 2025</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="Notices/Sports Notice-11_Cricket Boys_Resheduled_Final.pdf">
+                               Sports Notice Cricket
+                            </a>
+                            <span>13 Feb 2025</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="Notices/PROJECT DOT IN 2024-2025.pdf">
+                                Model Fiesta  Project List
+                            </a>
+                            <span>13 Feb 2025</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/10112019192348577.pdf">
+                                Annual Sports Meet Announcement
+                            </a>
+                            <span>10 Nov 2019</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/17022021192348578.pdf">
+                                COVID-19 Protocols for Campus
+                            </a>
+                            <span>17 Feb 2021</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/01062019192348500.pdf">
+                                New Online Course Launches
+                            </a>
+                            <span>01 Jun 2019</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/05072020192348299.pdf">
+                                Summer Internship Opportunities
+                            </a>
+                            <span>05 Jul 2020</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/12082019192348544.pdf">
+                                Workshop on Data Science
+                            </a>
+                            <span>12 Aug 2019</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/02092019192348595.pdf">
+                                Scholarship Programs Available
+                            </a>
+                            <span>02 Sep 2019</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/20102020192348112.pdf">
+                                New Faculty Induction
+                            </a>
+                            <span>20 Oct 2020</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/15112020192348612.pdf">
+                                Virtual Campus Tour
+                            </a>
+                            <span>15 Nov 2020</span>
+                        </div>
+                        <div class="scrollitem">
+                            <a href="/docs/Announcement/30012020192348590.pdf">
+                                Alumni Meet 2020
+                            </a>
+                            <span>30 Jan 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  // Disable right click
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Disable inspect mode
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || e.key === 'f12') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable inspect mode on right click
+  document.addEventListener('mousedown', function(e) {
+    if (e.button === 2) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+<script>
+const scrollBox = document.querySelector('.scrollbox');
+const scrollContent = document.getElementById('scrollContent');
+let scrollSpeed = 1; // Speed of scrolling
+let cloneContent = null;
+
+// Clone the original content and append it to create a continuous loop
+function cloneOriginalContent() {
+    cloneContent = scrollContent.cloneNode(true);
+    scrollContent.parentNode.appendChild(cloneContent);
+}
+
+// Continuously scroll and reset when needed
+function autoScroll() {
+    scrollBox.scrollTop += scrollSpeed;
+    
+    // When scrolling reaches the first cloned content, reset to the start
+    if (scrollBox.scrollTop >= scrollContent.scrollHeight) {
+        scrollBox.scrollTop = 0; // Reset to start for a seamless loop
+    }
+}
+
+// Start auto-scroll and clone content for seamless looping
+window.onload = function() {
+    cloneOriginalContent(); // Clone the content for continuous looping
+    setInterval(autoScroll, 60); // Set interval for scrolling
+}
+</script>
+<section class="news-section">
+  <div class="container-fluid">
+    <div class="news-section-row">
+      <div class="item-notice">
+
+        <!-- New Section for Full Notices -->
+        <h2 class="notice-title">All Notices</h2> <!-- Bigger Title for New Section -->
+        <div class="full-notice-box">
+          <ul class="notice-list">
+            <li>
+              <a href="Notices/hackathon.pdf"> GIET Hackathons Guidlines</a>
+              <span class="notice-date">13 Feb 2025</span>
+            </li>
+            <li>
+              <a href="Notices/notice1.pdf">Permission for work for Suravi Event</a>
+              <span class="notice-date">13 Feb 2025</span>
+            </li>
+            <li>
+              <a href="Notices/Sports Notice-11_Cricket Boys_Resheduled_Final.pdf"> Sports Notice Cricket</a>
+              <span class="notice-date">13 Feb 2025</span>
+            </li>
+            <li>
+              <a href="Notices/PROJECT DOT IN 2024-2025.pdf"> Model Fiesta  Project List</a>
+              <span class="notice-date">13 Feb 2025</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/10112019192348577.pdf">Annual Sports Meet Announcement</a>
+              <span class="notice-date">10 Nov 2019</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/17022021192348578.pdf">COVID-19 Protocols for Campus</a>
+              <span class="notice-date">17 Feb 2021</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/01062019192348500.pdf">New Online Course Launches</a>
+              <span class="notice-date">01 Jun 2019</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/05072020192348299.pdf">Summer Internship Opportunities</a>
+              <span class="notice-date">05 Jul 2020</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/12082019192348544.pdf">Workshop on Data Science</a>
+              <span class="notice-date">12 Aug 2019</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/02092019192348595.pdf">Scholarship Programs Available</a>
+              <span class="notice-date">02 Sep 2019</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/20102020192348112.pdf">New Faculty Induction</a>
+              <span class="notice-date">20 Oct 2020</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/15112020192348612.pdf">Virtual Campus Tour</a>
+              <span class="notice-date">15 Nov 2020</span>
+            </li>
+            <li>
+              <a href="/docs/Announcement/30012020192348590.pdf">Alumni Meet 2020</a>
+              <span class="notice-date">30 Jan 2020</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+
+
+
+<footer id="socialdiv">
+  <!-- Difference between div and footer ? -->
+  <div  id="socialx" >
+    <!-- Created a different id here, so as to target the social media buttons -->
+    <ul class="icon-effect icon-effect-1a" style="text-align: center;">
+      <li><a target="_blank" href="https://www.facebook.com/giet.ghangapatna.9" class="icon"><i class="fa fa-facebook"></i></a></li>
+      <li><a target="_blank" href="https://x.com/GIETGHANGAPATNA" class="icon"><i class="fa fa-twitter"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/giet_ghangapatna_official/" class="icon"><i class="fa fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.youtube.com/@G.I.E.TGhangapatna" class="icon"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+  </div>
+  <div><a target="_blank" href="test.html"><p style="text-align: center; color: white;">Designed And Developed @Team SURAVI-2K25 Bhubaneswar</p></a></div>
+</footer>
+<!-- Sparrow to topmost section -->
+
+
+
+<script type="text/javascript" src="js/animations.js"></script>
+<script>
+  $('.carousel').carousel({
+    interval: false,
+    wrap: true,
+    pause: true,
+  });
+</script>
+
+</body>
+</html>
+
+
+
+

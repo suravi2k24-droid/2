@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disable Right Click</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .custom-popup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f8d7da;
+      padding: 20px;
+      border: 1px solid #f5c6cb;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .custom-popup h3 {
+      margin: 0;
+      color: #721c24;
+    }
+
+    .custom-popup button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #f5c6cb;
+      color: #721c24;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Right Click Disabled Demo</h1>
+  <p>Try right-clicking anywhere on this page to see the popup.</p>
+
+  <!-- Popup Container -->
+  <div class="custom-popup" id="popup">
+    <h3>Right-click is not allowed on this site!</h3>
+    <button onclick="closePopup()">OK</button>
+  </div>
+
+  <!-- Overlay Background -->
+  <div class="overlay" id="overlay"></div>
+
+  <script>
+    // Disable right-click functionality
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+      showPopup(); // Show popup when right-click is attempted
+    });
+
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

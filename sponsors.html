@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a8518a">
+  <link rel="icon" href="Suravi Asset/Suravi Logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/parvaaheffects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Achievements</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60" style="padding-top: 50px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav_bar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" ></a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="https://forms.gle/AGnfxQEerThxgJVQA">T-SHIRT</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="events.html">EVENTS
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="events.html#Technical">TECHNICAL</a></li>
+                  <li><a href="events2.html">NON-TECHNICAL</a></li>
+                  <li><a href="events3.html#cultural">E-SPORTS</a></li>
+                  <li><a href="events4.html#E-sports">CULTURAL</a></li>
+                  <li><a href="events5.html#Athletics">ATHLETICS</a></li>
+                  <li><a href="events6.html#Athletics">SPORTS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">SPECIAL
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="internshipexpo.html">FOOD STALL</a></li>
+                </ul>
+              </li>
+              <li><a href="speakers.html">PATRON</a></li>
+              <li><a href="sponsors.html">SPONSORS</a></li>
+              <li><a href="parvaah.html">CONTACT</a></li>
+              <li><a href="contact.html">ORGANISERS</a></li>
+              <li><a href="achieve.html">ACHIEVEMENTS</a></li>
+  
+              <!-- New Flashing Notices Section -->
+              <li><a href="notices.html" class="flashing">NOTICES</a></li>
+              
+              <li style="background: none;">
+                <a target="_blank" href="https://www.gietbbsr.edu.in/" style="padding:0px 15px; background: none !important;">
+                  <img src="Suravi Asset/L3.png" height="50">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  
+
+  <script>
+    // Disable right click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable inspect mode
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || e.key === 'f12') {
+        e.preventDefault();
+      }
+    });
+
+    // Disable inspect mode on right click
+    document.addEventListener('mousedown', function(e) {
+      if (e.button === 2) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+    <title>Our Team</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    </section>
+    <section class="team-section">
+        <h2 class="section-title">SPONSORS</h2>
+        <div>
+            <!-- <p class="section-subtitle">Meet the amazing people behind Tech-Cultural Fest Suravi 2k25</p>   -->
+        </div>
+        
+
+        <title>RGB Update Card</title>
+  <style>
+    /* Styling the body for a dark theme */
+
+
+    
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Card container */
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Neon border animation */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #ff005d, #00ff5d, #00d4ff, #ff00d4);
+      background-size: 400% 400%;
+      z-index: -1;
+      filter: blur(8px);
+      animation: border-glow 8s infinite ease;
+    }
+
+    /* Glowing text */
+    .update {
+      font-size: 1.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      animation: glowing-text 4s infinite alternate;
+    }
+
+    /* Animation for border glow effect */
+    @keyframes border-glow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Text color transition */
+    @keyframes glowing-text {
+      0% { color: rgb(255, 0, 93); }
+      25% { color: rgb(0, 255, 93); }
+      50% { color: rgb(0, 212, 255); }
+      75% { color: rgb(255, 0, 212); }
+      100% { color: rgb(255, 0, 93); }
+    }
+
+    /* Normal text */
+    .content {
+      font-size: 1rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="update">This section will be updated soon</div>
+    <div class="update">Stay Tuned!!!</div>
+    <div class="content">Check back later for the latest content and updates!</div>
+  </div>
+
+       
+        <!-- <div class="team-cards">
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Jatindra Kumar Mishra.jpg" alt="Ashit Jena">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. JATINDRA MISHRA </h3>
+                    <p class="role">OVERALL ARRANGEMENT </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Amit Jain Biswal New.jpg" alt="--------------">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. AMIT JAIN BISWAL</h3>
+                    <p class="role">WEB SITE, ONLINE REGISTRATION </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+            <!-- <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Debajyoti.jpg" alt="MR. DEBAJYOTI MISHRA">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. DEBAJYOTI MISHRA</h3>
+                    <p class="role">SPONSORSHIP</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Sanjay Maity.png" alt="MR. SANJAY MAITY">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. SANJAY MAITY</h3>
+                    <p class="role">COMPUTER EVENTS</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/B S Rao.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. B.SRINIVAS RAO </h3>
+                    <p class="role">Overall Co-ordinator</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Saroj Ku Dash.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. SAROJ KUMAR DASH </h3>
+                    <p class="role">SPORTS, ATHLETICS & MARATHON </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Sibabrata Mohanty.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. SIBABRATA MOHANTY </h3>
+                    <p class="role">NON TECHNICAL</p>
+                   
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/ajanta mam.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MS. AJANTA PRIYADARSHINEE </h3>
+                    <p class="role">NON TECHNICAL (GIRLS)</p>
+                    
+                </div>
+            </div>
+           
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/pujashree panigrahi .jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MRS. PUJASHREE PANIGRAHI </h3>
+                    <p class="role">SPORTS, ATHLETICS & MARATHON </p>
+                   
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Tasmasha.jpeg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MRS. TAMASA PRIYADARSINI </h3>
+                    <p class="role">DIGITAL MARKETING </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Neyati Naik.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MRS. NIYATI ΝΑΙΚ </h3>
+                    <p class="role">SPORTS, ATHLETICS & MARATHON </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Swarupa mam.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MRS. SWARUPA ARJYA </h3>
+                    <p class="role">NON TECHNICAL (GIRLS) </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Mamuni Arya.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">DR. MAMUNI ARYA </h3>
+                    <p class="role">TECHNICAL:-1</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Abanikanta Pattnaik.jpeg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. ABANIKΑΝΤΑ ΡΑΤΤΑNAYAK </h3>
+                    <p class="role">TECHNICAL:-1</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Shivaram Pattnaik.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. SHIVA RAM PATNAIK </h3>
+                    <p class="role">TECHNICAL:-1 </p>
+                    
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Tanushree Dalai Final.jpeg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MS. TANUSHREE DALAI </h3>
+                    <p class="role">TECHNICAL:-1 </p>
+                   
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Debapriya N Padhy.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. DEBAPRIYA NILAKANTHA PADHY </h3>
+                    <p class="role">TECHNICAL:-2 </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Bibhuti Bhusan Behera Photo.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">DR. BIBHUTI BHUSANA BEHERA </h3>
+                    <p class="role">TECHNICAL:-3 </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Rudrashish Panda.jpeg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">DR.RUDRASHISH PANDA </h3>
+                    <p class="role">TECHNICAL:-3 </p>
+                    
+                </div>
+            </div>
+             <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Maitrayee Rout.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">DR. MAITRAYEE ROUT </h3>
+                    <p class="role">TECHNICAL:-4 (START UP FAIR) </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Nilanchala Patra.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. NILANCHALA PATRA </h3>
+                    <p class="role">PRIZE DISTRIBUTION </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Ratnamanjari Mishra.jpeg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MRS. RATNAMANJARI MISHRA  </h3>
+                    <p class="role">PRIZE DISTRIBUTION </p>
+                   
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Dillip Ku Dash.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">DR. DILLIP KUMAR DASH </h3>
+                    <p class="role">DISCIPLINARY COMMITTEE </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/tarakanta sir.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. TARAKANTA SAHO0 </h3>
+                    <p class="role">CULTURAL EVENTS </p>
+                   
+                </div>
+            </div>
+              
+                    <div class="team-card">
+                        <div class="card-img">
+                            <img src="Suravi Asset/Photo of Convenor & Coconvenor/Prasanna Kumar Mishra Photo.jpeg" alt="MR. PRASANNA KUMAR MISHRA">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="name">MR. PRASANNA KUMAR MISHRA</h3>
+                            <p class="role">COMPUTER EVENTS</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+            </div>
+            <div class="team-card">
+                <div class="card-img">
+                    <img src="Suravi Asset/Photo of Convenor & Coconvenor/Smruti Ranjan Bhadra.jpg" alt="Bishwa Bhushan Palar">
+                </div>
+                <div class="card-content">
+                    <h3 class="name">MR. SMRUTI RANJAN BHADRA </h3>
+                    <p class="role">DECORATION </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+                    <div class="team-card">
+                        <div class="card-img">
+                            <img src="Suravi Asset/Photo of Convenor & Coconvenor/Subhasish Swain.jpg" alt="Bishwa Bhushan Palar">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="name">MR. SUBHASISH SWAIN </h3>
+                            <p class="role">FLEX BANNER, ID CARD, CERTIFICATE </p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="team-card">
+                        <div class="card-img">
+                            <img src="Suravi Asset/Photo of Convenor & Coconvenor/BTM Nayak.jpg" alt="MR. BTM NAYAK">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="name">MR. BTM NAYAK</h3>
+                            <p class="role">SPONSORSHIP</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="team-card">
+                        <div class="card-img">
+                            <img src="Suravi Asset/Photo of Convenor & Coconvenor/Dr.Chandan Ku Sahoo.jpeg" alt="DR. CHANDAN KUMAR SAHOO">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="name">DR. CHANDAN KUMAR SAHOO</h3>
+                            <p class="role">GUEST ARRANGEMENT & HOSPITALITY</p>
+                           
+                        </div>
+                    </div>
+        
+     -->
+                </div>
+            </section>
+     
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* * {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0A0F23;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.team-section {
+  text-align: center;
+  margin: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: rgb(0, 255, 162);
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 162, 0.8);
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+ */
+
+
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: linear-gradient(145deg, #1a1e33, #131729);
+  border-radius: 15px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4), 0 0 30px 10px rgba(0, 255, 162, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 270px; /* Slightly increased */
+  height: 460px; /* More height for text */
+  position: relative;
+}
+
+.card-content {
+  padding: 15px; /* Adjusted padding to make room for text */
+}
+
+.name {
+  font-size: 1.3rem; /* Slightly reduced font size */
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.role {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: rgb(0, 255, 162);
+}
+
+.social-icons {
+  margin-top: 10px; /* Adjusted margin to prevent overlap */
+}
+
+
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 5px rgba(0, 255, 162, 0.8);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.role {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: rgb(0, 255, 162);
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: rgb(0, 255, 162);
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: rgba(0, 255, 162, 0.8);
+}
+
+.social-icons i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 350px)
+{
+  .icon
+  {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 20px !important;
+    line-height: 45px !important;
+  }
+}
+#socialdiv{
+  min-height: 15vh;
+  background: #232526;  /* fallback for old browsers */
+  padding: 10px 10px 1px 10px;
+}
+#socialx{
+  /*position: absolute;*/
+  bottom: 0;
+}
+.transition-animation {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+/* Ul styles */
+#socialx ul {
+  list-style: none;
+}
+#socialx ul > li {
+  display: inline;
+  margin-right: 20px;
+}
+/*
+* Icon styles
+*
+* There are styles for icon and everything which are connected with it.
+*/
+.icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #f1f1f1;
+  line-height: 52px;
+  text-align: center;
+  background-color: #000000;
+}
+.icon:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+}
+/* Hover effect */
+.icon-effect .icon {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.icon-effect .icon:after {
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 4px #f1f1f1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.icon-effect-1a .icon:hover {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+.icon-effect-1a .icon:hover:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.carousel .item {
+  height: 100vh;
+  width:100%;
+}
+
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,109 @@
+/* General reset for padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling for background and text alignment */
+body {
+    background-color: #0A0F23;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling for the section */
+.swirvey {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Column styling for individual person cards */
+.col-sm-3 {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Image styling */
+.col-sm-3 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Name styling */
+.col-sm-3 h5 {
+    color: #00FF92;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Role styling */
+.col-sm-3 h6 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+/* LinkedIn and Mail Icon Styling */
+.col-sm-3 div img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the card */
+.col-sm-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 146, 0.7);
+}
+
+/* Hover effect for the images */
+.col-sm-3:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 146, 0.8);
+}
+
+/* Icon hover effect */
+.col-sm-3 div a:hover img {
+    transform: scale(1.2);
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5rem;
+    color: rgba(53, 226, 130, 0.9);
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 10px rgba(53, 226, 130, 0.8);
+}
+
+/* Line under the title */
+hr {
+    width: 80%;
+    margin: 10px auto 40px auto;
+    border: 1px solid rgba(53, 226, 130, 0.5);
+}
